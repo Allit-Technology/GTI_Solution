@@ -1,0 +1,72 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32630.194
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FN.Store.UI", "FN.Store.UI\FN.Store.UI.csproj", "{B6AAE5A5-0B61-48A5-B89F-EBA577422FDF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D5EA1D27-B651-4511-9359-A23B78C6FB60} = {D5EA1D27-B651-4511-9359-A23B78C6FB60}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FN.Store.Domain", "FN.Store.Domain\FN.Store.Domain.csproj", "{92702BCE-DC0A-42EC-BD8A-92ACC3490271}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FN.Store.Data", "FN.Store.Data\FN.Store.Data.csproj", "{77531323-66C8-460D-9D00-57F3BD996947}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FN.Store.Tests", "FN.Store.Tests\FN.Store.Tests.csproj", "{064FDE93-AF26-4F09-BCCD-C29C2FBC81D8}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "FN.Store.Wcf", "FN.Store.Wcf\", "{D5EA1D27-B651-4511-9359-A23B78C6FB60}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.7.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_61702"
+		Debug.AspNetCompiler.PhysicalPath = "FN.Store.Wcf\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61702\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_61702"
+		Release.AspNetCompiler.PhysicalPath = "FN.Store.Wcf\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61702\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "61702"
+		SlnRelativePath = "FN.Store.Wcf\"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6AAE5A5-0B61-48A5-B89F-EBA577422FDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6AAE5A5-0B61-48A5-B89F-EBA577422FDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6AAE5A5-0B61-48A5-B89F-EBA577422FDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6AAE5A5-0B61-48A5-B89F-EBA577422FDF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92702BCE-DC0A-42EC-BD8A-92ACC3490271}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92702BCE-DC0A-42EC-BD8A-92ACC3490271}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92702BCE-DC0A-42EC-BD8A-92ACC3490271}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92702BCE-DC0A-42EC-BD8A-92ACC3490271}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77531323-66C8-460D-9D00-57F3BD996947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77531323-66C8-460D-9D00-57F3BD996947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77531323-66C8-460D-9D00-57F3BD996947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77531323-66C8-460D-9D00-57F3BD996947}.Release|Any CPU.Build.0 = Release|Any CPU
+		{064FDE93-AF26-4F09-BCCD-C29C2FBC81D8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{064FDE93-AF26-4F09-BCCD-C29C2FBC81D8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{064FDE93-AF26-4F09-BCCD-C29C2FBC81D8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{064FDE93-AF26-4F09-BCCD-C29C2FBC81D8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5EA1D27-B651-4511-9359-A23B78C6FB60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EA1D27-B651-4511-9359-A23B78C6FB60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5EA1D27-B651-4511-9359-A23B78C6FB60}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5EA1D27-B651-4511-9359-A23B78C6FB60}.Release|Any CPU.Build.0 = Debug|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C5518FA-F334-49CE-9BD7-A8865B2B8942}
+	EndGlobalSection
+EndGlobal
