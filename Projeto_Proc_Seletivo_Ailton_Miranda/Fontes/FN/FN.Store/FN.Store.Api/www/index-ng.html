@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <meta charset="utf-8" />
+    <title>Demo jQuery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body ng-controller="produtosCtrl">
+
+    <h2>Demo consumindo c/ angular</h2>
+    <h3>{{title}}</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="produto in model">
+                <td>{{produto.Id}}</td>
+                <td>{{produto.Nome}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <script>
+        angular.module('app', [])
+            .controller('produtosCtrl', function ($scope, $http) {
+                $scope.title = 'Minha App do Angular';
+                var _url = 'http://localhost:49519/api/v1/produtos';
+                $http.get(_url).then(function (resp) {
+                    console.log(resp);
+                    $scope.model = resp.data;
+                }, function (resp) {
+                    console.log(resp);
+                });
+            });
+
+    </script>
+
+</body>
+</html>

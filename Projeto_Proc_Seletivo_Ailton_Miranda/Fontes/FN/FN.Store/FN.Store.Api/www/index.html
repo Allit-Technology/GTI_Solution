@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Demo jQuery</title>
+</head>
+<body>
+
+    <h2>Demo consumindo c/ jQuery</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody id="tbl"></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+    <script>
+        
+        $.ajax({
+            url: 'http://localhost:49519/api/v1/produtos',
+            success: function (resp) {
+                //console.log(resp);
+                $.each(resp, function (i, v) {
+                    //console.log(v);
+                    var tr = $('<tr/>');
+                    $('<td>' + v.Id + '</td>').appendTo(tr);
+                    $('<td>' + v.Nome + '</td>').appendTo(tr);
+                    tr.appendTo($('#tbl'));
+                });
+            }
+        });
+    </script>
+</body>
+</html>
